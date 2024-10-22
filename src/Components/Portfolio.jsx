@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/moon.png";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,35 +31,35 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "TravelEase",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    "A website which provides you one-stop solution for all your travel booking needs! Whether you’re planning a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour",
+    url: "https://github.com/vishakha0411/TravelEase.git",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Laundrix",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    "Laundrix is a web application designed to streamline and automate the daily transactions and operations of laundry shop businesses.",
+    url: "https://github.com/vishakha0411/Laundrix.git",
   },
   {
-    title: "My Resume Site",
+    title: "UI/UX Designs",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    "The designs consists of front-end, app designs, website and everything.",
+    url: "https://www.figma.com/file/n6Ozldm6Jk1TjOgT3TfAqR/UI%2FUX%20Designs?type=design&fuid=1137094087568354255",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Android App- HireAskill ",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    "An App for hiring and seeking professional as well as nonprofessional jobs. authentication, networking, booking appointments, and much more",
+      url: "https://github.com/vishakha0411/HireASkill.git",
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <h2 style={{ color:"green",textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
@@ -72,7 +72,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ color:"navy",flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
             </div>
